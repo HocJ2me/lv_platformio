@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
   * @file    main.c
-  * @author  Ac6
+  * @author  Le Chi Tuyen
   * @version V1.0
-  * @date    01-December-2013
+  * @date    14-7-2022
   * @brief   Default main function.
   ******************************************************************************
 */
@@ -14,13 +14,14 @@
 
 #include "demos/lv_demos.h"
 
+#include "config.h"
+
+#include "application.h"
+
+
 int main(void)
 {
-	lv_init();
-
-	hal_setup();
-
-  lv_demo_widgets();
-
-	hal_loop();
+  setup();
+  loop();
 }
+  
